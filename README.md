@@ -8,9 +8,9 @@ After we have a data, called "test.bin", we can start extract CSI profile from i
 
 For quick start, you can just run automate.py in parse_csi/src. e.g.
 
-python id_automate.py WiFi_data/5g/test/ ../result/5g/test/MIMO 0 svd4H ../../imgs/5g/real/test/MIMO ../../signal_process/feature/gabor/5g/test/MIMO
+python id_automate.py test/ ../result/test/ 0 svd4H ../../imgs/test/ ../../signal_process/feature/gabor/test/
 ---
-This command means to parse CSI from .bin files in WiFi_data/5g/test/, apply SVD on 30 sub-carriers separately and save files in ../result/5g/test/MIMO, transform into 4 images and save images in ../../imgs/5g/real/test/MIMO, extract gabor features on images and save features in ../../signal_process/feature/gabor/5g/test/MIMO. 
+This command means to parse CSI from .bin files in test/, apply SVD on 30 sub-carriers separately and save files in ../result/test/, transform into 4 images and save images in ../../imgs/test/, extract gabor features on images and save features in ../../signal_process/feature/gabor/test/. 
 
 After the whole processing, you can conduct 10-fold cross-validation by running lateFusion.py in /svm. e.g.
 python lateFusion.py [if build confusion matrix, then 1] [feature directory]
