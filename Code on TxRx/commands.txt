@@ -1,0 +1,9 @@
+Reciever:(in netlink/ directory)
+
+./recv.sh 100 HT20 test.bin
+
+Transmitter:(in injections/ directory)
+
+./setup_inject.sh 100 HT20
+
+./send.sh 5
