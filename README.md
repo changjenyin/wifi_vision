@@ -15,6 +15,6 @@ This command means to parse CSI from .bin files in test/, apply SVD on 30 sub-ca
 After the whole processing, you can conduct 10-fold cross-validation by running lateFusion.py in /svm. e.g.
 python lateFusion.py [if build confusion matrix, then 1] [feature directory]
 ---
-For other parameter settings in details, please refer to automate.py in new_intel_csi/parse_csi/src.
+For other parameter settings in details, please refer to automate.py in parse_csi/src.
 
 
